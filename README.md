@@ -1,185 +1,281 @@
-# The Write Head
-*Categorical Teleportation and the Assembly of Reason*
+# They Ran a Bell Test on a Language Model
+*Where the ghost sits when a machine chooses a word*
 
 **Troy Teno | November 2026**
-*Essay — Not Peer Reviewed. Companion to Cornering the Ghost. Established marks a published result within its stated assumptions. Reading marks my way of putting established pieces together. Proposed marks a connection that still needs a model or a test.*
+*Essay — Not Peer Reviewed. Companion to Cornering the Ghost. Established marks a result supported by a cited source, which may be a preprint. Reading marks my way of putting established pieces together. Proposed marks a connection that still needs a model or a test.*
 
-## The Promise
+## The Headline
 
-*Cornering the Ghost* ended with a promise. A companion essay would carry the same structure into language and the mind, where the cups and caps of teleportation also compose meaning, and where the ghost may sit in the same corner.
+Early in 2026, a headline came across my feed. Someone had run a Bell test on a language model, and the model had failed it.
 
-This is that essay. It keeps the same discipline. The mathematics comes first, carried as far as it honestly goes. Then the comparison, and the place where it breaks. Then a set of studies that have not been run, offered to anyone who wants to run them.
+Failing was not the strange part. A Bell test is how physicists showed that two particles, far apart, can act as one object, as if the space between them did not matter. Einstein called it spooky. To me, spooky has always meant the ghost: the part we have not explained.
 
-The question this time is the mirror of the last one. Not how a future becomes a past, but this:
+I had been living with a ghost of my own for a while. A thought starts in my head. Neurons fire, muscles move, air shakes, an eardrum moves, and chemistry and electricity rebuild something close to that thought in someone else. Every step loses something. Put a computer in the middle and it still works. Something carries through all of it. I call it a semantic wave, and I cannot tell you what it is made of.
 
-How does a possibility become a record, and how does that record become part of a meaning?
+At the same time, I was having conversations with language models that should not have been possible. They were unreasonably reasonable. I had started asking why, and what "reasonable" even means. Then a headline said these machines show the same kind of statistics as entangled particles. I had to know what that meant.
 
-## What We Already Know
+*Cornering the Ghost* took on the other famous piece of quantum spookiness, teleportation, and found that almost all of it is geometry, except one step. This essay does the same with the Bell test. The researchers' own title calls what they found quantum-like contextuality. The "like" is honest. Nothing in the model is quantum. Once you see how the model reads a sentence, the result is what we should expect. Almost all of it is geometry, except one place. It is the same kind of place.
 
-We know a sentence is built before it is understood. You start speaking without knowing how the sentence will end. The words arrive, fitted, in an order that makes them mean what you meant.
+## First Pictures
 
-We know a language model writes one token at a time. A token is a word or a piece of one. Before each token, the model computes odds for every token it knows. Then one is picked and written, and everything after must be computed with it in place. (Established)
+On my first read, two pictures stuck with me.
 
-We know later words change how earlier words are read. "The crane reached down toward the steel beam." "The crane reached down toward the fish." The first five words are identical. The crane is not. (Established)
+The first was crane and crane. The bird and the machine are spelled the same and sound the same. No microscope separates them. Only context does. That felt like two identical particles with no hidden difference inside them. It turned out to be half right. In BERT, the model used here, both cranes really are a single identical point in the model's word table. But the researchers' test compares two different words, not two senses of one word. (Reading)
 
-And we know, from *Cornering the Ghost*, the shape of teleportation. It has four parts. A resource: an entangled pair, prepared in advance, one half at each end. A measurement: the sender joins the unknown state with their half and compares the two. A record: two classical bits. A correction: the receiver applies the fix those bits name, and holds the original state exactly. Nobody, at any step, reads what was carried. (Established: Bennett et al., 1993)
+The second was light. Along a light ray, no time passes. Leaving and arriving are the same moment. The space of words felt like that: every word present at once. That part turned out to be literal. At every choice, the model scores its entire vocabulary in one step, about 30,000 words for BERT, all together. (Established; the link to light is a picture)
 
-## The Slide into Grammar
+## What a Bell Test Asks
 
-In *Cornering the Ghost*, teleportation was a drawing. A wire bent into a cup was the shared pair. A wire bent into a cap was the comparison. Pull the bent wire straight and the state runs through. (Established: Abramsky and Coecke, 2004)
+*Cornering the Ghost* used a spreadsheet. Here it is slowly.
 
-The same drawing was used for sentences before I ever used it for time. In Joachim Lambek's grammar, every word carries a type. A noun is a noun. A transitive verb carries two hooks, one reaching left for a subject and one reaching right for an object. When the nouns arrive, the hooks close. What remains is a sentence. (Established: Lambek, 1999)
+Alice and Bob each have a detector with two settings. Call Alice's settings A1 and A2, and Bob's B1 and B2. They share a pair of particles, one each, prepared together and then carried far apart. On each run, each of them picks one setting, without knowing what the other picked, and writes down a result: plus or minus.
 
-Those hooks are cups. Coecke, Sadrzadeh and Clark showed that Lambek's grammar and the teleportation diagrams are the same kind of mathematical object, and built a way to compute a sentence's meaning by pulling the wires straight. (Established: Coecke, Sadrzadeh and Clark, 2010)
+One run gives one row: Alice's setting, her result, Bob's setting, his result.
 
-That is a model of how meaning composes. It is not a description of what happens inside a brain or a machine. It is the reason the comparison is allowed at all.
+After thousands of runs, sort the rows by which pair of settings was picked. There are four possible pairs: A1 with B1, A1 with B2, A2 with B1, A2 with B2. So there are four tabs, one for each pair of settings, not one per person. Each tab has two columns: Alice's results and Bob's.
 
-## The Blorg Sentence
+Look at one column alone and it is a coin toss: half plus, half minus. Alice, reading only her own results, learns nothing about what Bob chose. The pattern appears only when the two columns sit side by side. Then they are clearly connected. (Established)
 
-Read this:
+## Gloves, and Why Particles Are Not Gloves
 
-*The blorg flurbled the snorble flambly.*
+A connection across distance is not strange by itself. Put a pair of gloves in two boxes and drive one box across the country. Open yours, find a left glove, and you know the other is a right. The gloves were separated, but the connection was set when they were packed. Each box carried its answer the whole way.
 
-Not one of those words means anything. And yet you can already answer questions about it. What did the blorg do? It flurbled. To what? The snorble. How? Flambly.
+That is the master sheet. One row per pair, with every answer written in before anyone looks. If particles were like gloves, each would carry a written-in answer for every setting, and each tab would be that sheet with the unasked columns hidden. Physicists call these written-in answers local hidden variables.
 
-Grammar built the slots before any meaning arrived. Brain-imaging studies use sentences like this one to separate structure from meaning. Part of the brain's language network tracks the structure of a sentence even when every content word is replaced by nonsense. (Established: Pallier, Devauchelle and Dehaene, 2011)
+Bell found a way to test for the sheet. The particle data come out like this. On three of the tabs, A1 with B1, A1 with B2, and A2 with B1, Alice and Bob match about 85 percent of the time. On the fourth, A2 with B2, they differ about 85 percent of the time.
 
-Now look at it as a drawing. The verb's hooks are cups. The nouns sit on the wires. And the nouns are unknown. The diagram is complete, the relations are fixed, and nobody knows what is being related.
+Now follow the written-in answers like a chain. A2 usually equals B1. B1 usually equals A1. A1 usually equals B2. Each link fails only about 15 percent of the time. On any single row, if A2 and B2 disagree, at least one of those three links must have broken. So with written-in answers, A2 and B2 can disagree at most 15 plus 15 plus 15, or 45 percent of the time.
 
-That is teleportation's defining property. The protocol moves a state nobody has read. Grammar does the same: it carries the relation without knowing the content. Grammar is the shared resource that lets meaning move without anyone knowing it in advance. (Reading)
+The particles disagree about 85 percent of the time. No sheet of written-in answers can do that, and neither can any shuffled mix of such sheets. The particles are not gloves. (Established: Bell, 1964; Clauser et al., 1969)
 
-The resource in teleportation is prepared before the message exists. So is grammar. Every speaker carries it before they know what they will say.
+What is left is stranger. An entangled pair does not have one state for each particle. It has one state for the pair. The pair's possibilities live in a bigger table than either particle's alone, the two multiplied together rather than added, and an entangled state is one that cannot be split into Alice's piece and Bob's piece. The pair is one object spread across two places. (Established)
 
-## Open Slots and Closed Slots
+And there is no answer on either end until it is measured. This is not Alice's measurement causing Bob's result. When they are far apart, which of them measured first depends on who is watching, and the results come out the same either way. Nor can either of them use it to send a message, because each column alone is still a coin toss. The connection is real, and it is not written down anywhere in advance. (Established)
 
-Here is the distinction this essay turns on.
+That failure of the tabs to come from one master sheet has a general name: contextuality. Abramsky and Brandenburger showed it can be defined for any system whose local views each make sense but have no single global sheet behind them. Entangled particles are one such system. Nothing in the definition requires physics. (Established: Abramsky and Brandenburger, 2011; Abramsky, 2013)
 
-A computer's instruction stream also has syntax. On the old Z80 processor, an instruction is an opcode followed by its operands, in strict order. The byte 0x3E means "load the accumulator with the next byte." That next byte can be any value, so the slot is open in value. But what the instruction does with it is fixed by the chip's specification. Nothing about its meaning is left for context to decide. There is nothing to ask.
+## Why Anyone Thought to Look
 
-Language leaves its slots open in meaning, on purpose. "Crane" holds a bird and a machine until something else arrives. The blorg sentence is all open slots.
+Nobody runs a Bell test on a language model by accident. The idea came from a bridge built twenty years earlier.
 
-So the contrast is not syntax against no syntax. Both have slots. The Z80's slots are open in value and closed in meaning. Language's slots are open in meaning, and context decides what fills them. The first lets you execute. The second lets you ask questions.
+In 2004, Abramsky and Coecke redrew quantum mechanics as diagrams: wires for systems, a cup for an entangled pair, a cap for a joint measurement. Teleportation became a single drawing. A few years later, Coecke, Sadrzadeh and Clark showed that grammar can be drawn with the same kind of diagrams. A verb's hooks for its subject and object are cups. When the nouns arrive, the wires pull straight, and a sentence's meaning is computed. (Established: Abramsky and Coecke, 2004; Coecke, Sadrzadeh and Clark, 2010)
 
-And for a predictive system, this is where probability enters. A system that must predict what fills a slot whose meaning is open has to hold odds over the candidates. A language model does exactly that. Where meaning is fixed by a specification, there is far less to hold odds over. (Proposed)
+That is a match between two ways of drawing, not proof that the processes are the same. BERT is not built from these diagrams. The diagrams are why anyone thought to test it. Whether a model's internal space actually carries the diagrams' hooks is a separate, open question. But once grammar is drawn with the same pictures as entanglement, the next question is obvious: do the statistics show the same refusal to glue? Lo, Sadrzadeh and Mansfield went and looked.
 
-The thesis, in one line:
+## What They Actually Did
 
-**Syntax builds the slots. Meaning is what arrives in the open ones.** (Proposed)
+They built a small story with a pronoun in it, so the model has to decide what the pronoun points to:
 
-## The Write Head
+*There is an apple and a strawberry. The [blank] is red and the same one is round.*
 
-Walk one token through a language model.
+The model fills the blank. It gives a probability for "apple" and a probability for "strawberry." The researchers keep only those two, rescaled to add up to one, which is the same as asking the model to choose between just those two words. (Established: Lo, Sadrzadeh and Mansfield)
 
-The context goes in. Layer after layer mixes it. At the top, the model's internal state becomes odds: one number for every token it knows, all adding to one. After "The crane reached down toward the," both "steel" and "water" may have real odds. Nothing is chosen yet.
+Then they build the spreadsheet. Instead of detector settings, there are clues. Three sentences pair the clues in a loop: red and round, round and sweet, sweet and red. Each sentence is one tab. A master sheet would be one fixed answer for each clue, true no matter which sentence asks: which noun is the red one, which is the round one, which is the sweet one. The test is the same chain. Follow the clues around the loop, red to round to sweet and back to red, and ask whether the model's odds could all come from written-in answers. Where the odds sit near even, the chain can break. (Established)
 
-Then a small step that is rarely mentioned. A sampler picks one token. Usually it draws a random number and lets the odds decide. At temperature zero, it simply takes the most likely one.
+They ran this pattern across pairs of nouns and descriptions drawn from Simple English Wikipedia. Out of 51,966,480 cases, 77,118 failed to glue under a sheaf-theoretic test, and 36,938,948 failed under a different test called Contextuality-by-Default. These are two distinct frameworks, not a strict and a loose version of one test. (Established)
 
-The token is written. It joins the context. Every later step reads it as given.
+So the headline was right in its way. In that constructed setting, the model's tabs refuse to glue.
 
-That is the write head. Above it, a spread of possibilities. Below it, a record. Each token arrives already holding the record of the ones before. It has the same shape as the now in *Cornering the Ghost*. (Reading)
+## Why We Should Expect This
 
-Run teleportation's four parts against it. The resource is the grammar the model learned, carried in its weights before any prompt exists. The measurement is the pass through the layers, comparing the open slot with everything around it. The record is the written token. And the correction is never applied. The token stays.
+Here is the difference that takes the spookiness out.
 
-Even people never erase. A speaker who says "I mean" does not unsay the first word. They write a second one. In language, a correction is always a new record. (Reading)
+In a Bell test, what makes the result strange is distance. Bob's setting is far away. Alice's particle has no way to know it. If her result still depends on the whole arrangement, something is going on that ordinary pictures cannot explain.
 
-And the process is a loop, not a ladder. Meaning is already shaping the odds before a word is written, because the context the odds are computed from is itself made of earlier records, already read. Then a record is made. Then later words reread it, and that reading shapes the next odds. Possibility becomes a record. Records steer meaning. Meaning shapes the next possibility. (Reading)
+In a language model, nothing is far away. The context is the sentence, and the model reads the whole sentence at once. When it decides what "the red one" points to, the other clue, round or sweet, is right there in the same input, feeding the same calculation. Of course the answer depends on it. (Reading)
 
-## Where It Breaks, and Why That Is the Point
+A master sheet would need the model to store one fixed answer per clue, "the red one is the apple," that holds no matter what else the sentence says. The model stores nothing like that. It computes every answer fresh, from every sentence. Three sentences give three separate calculations, and nothing forces them onto one sheet. Where the model is sure, all three calculations land on the same answer, and the tabs glue by default. Where the odds sit near even, small differences between the sentences are enough to break the chain. (Reading)
 
-In nature, nobody knows who rolls the dice. In the machine, we do. We installed them. The sampler is a pseudo-random number generator. Give it the same seed and the same context, and it writes the same token every time. (Established)
+The data show this directly. In the particles, two tabs that share a setting always agree about it, because nothing can travel between them in time. In the model's data, two tabs that share a clue often do not agree, because the partner clue changes the answer. That is why the researchers had to use tests that correct for it. Particles cannot do this. Sentences do it all the time. (Established, as the paper's method; Reading, as the contrast)
 
-The menu is ours too. A model can only write tokens from a vocabulary engineers fixed before training. In physics, why the world reads out in one basis rather than another is a deep question. Here it is a design file. (Established)
+So the surprise would have been the other way around. A model that read every sentence and always glued would be the strange one. What the researchers found is contextuality of statistics in a system whose whole job is to depend on context. It is real, it is measurable, and it is what we should expect.
 
-So both halves of the old mystery, which basis and which outcome, have plain answers in the machine. The comparison breaks.
+## The Equation
 
-What is left is the odds. Nobody wrote them. Why "steel" and "water" are both live after "crane," and why the odds sit where they do, was set by training on text people wrote. The ghost did not vanish. It moved into the odds, and behind the odds, into the language of the minds that made it. (Reading)
+The researchers also derived an exact equation for what decides the model's choice.
 
-Two more breaks, stated plainly. A transformer has no quantum phase. Its numbers can add and cancel, but that is arithmetic, not quantum interference. And the contextuality measured in language models, below, is a property of statistics, not of particles.
+When the model chooses between two words, it gives each a score. The difference between the two scores is called the logit gap. At the model's last step, the gap equals the model's internal state at the blank, dotted with the difference between the two words' vectors, plus a small fixed offset. The balance between the two probabilities follows a smooth S-curve of that gap: even odds when the gap is zero, near certainty when it is large either way. (Established: Lo, Sadrzadeh and Mansfield, Proposition 7.1)
 
-## The Sentence, Three Ways
+In symbols: Δl = p · Δx + Δb, where p is the model's internal state, Δx is the difference between the two words' vectors, and Δb is the difference between their offsets. The balance between the two probabilities is tanh(Δl / 2).
 
-The double slit in *Cornering the Ghost* had three rungs. A sentence has the same three.
+Then they connect it to contextuality. The closer the odds sit to even, the more room there is for the tabs to refuse to glue. Near certainty, every tab says the same thing, and the sheet glues easily. Anything that pushes the gap toward zero pushes the case toward contextuality. (Established, as their reasoning)
 
-First, the word not yet written. The alternatives are open and carry odds. No fact has been made.
+## One Direction Out of Hundreds
 
-Second, the word written. "Crane" is in the context. The record exists, and its meaning is still open.
+A dot product reads how far one arrow reaches along another. So the gap depends on only one thing about the model's internal state: how far it reaches along the single arrow that runs from one word to the other. BERT's internal state has 768 directions. The choice between apple and strawberry reads exactly one of them. You can move the internal state any way you like, square to that arrow, and the odds between the two words do not change. (Established, exact)
 
-Third, the word reread. "Steel beam" arrives, and the crane is a machine. For a model that writes left to right, the fit here is exact. No information flows backward. The computation at the word "crane" cannot be influenced by any word that comes after it. Later positions read what was computed there, with a new question. (Established, for left-to-right models)
+So many different internal states give exactly the same odds. They lie on flat slices through the space, all parallel to the sheet where the choice flips.
 
-That is the sorting license from the quantum eraser, in a sentence. No letter travels backward. A later key selects a reading the earlier record allowed.
+Narrowing to two words makes the choice simple. It does not make the words simple. Both word vectors, and the model's state, were shaped in training against everything else the model knows. (Reading)
 
-## Both Sides of the Lens
+## How the Space Was Built
 
-Two lines of research have looked at this seam from opposite sides.
+What does it mean for two words to be close?
 
-From outside, Lo, Sadrzadeh and Mansfield took the formal tests physicists use for contextuality and applied them to how the model BERT resolves ambiguous words. They found 77,118 instances that pass the strict sheaf-theoretic test, and 36,938,948 that pass the broader Contextuality-by-Default test. These are two different criteria and should not be read as one. BERT reads in both directions, so it is not a write head. But it is a measured fact about context and meaning in a machine. (Established: Lo, Sadrzadeh and Mansfield, 2024)
+Before I read any of this, I had a guess. Survey people. Ask where "dog" falls between love and hate, where "mother" falls, where "house" falls. Do that for every word, on every scale, and stack the sheets. Each sheet is a dimension. Psychologists did nearly this in the 1950s, rating words on scales like good and bad, hot and cold, strong and weak. (Established: Osgood, Suci and Tannenbaum, 1957)
 
-From inside, in July 2026, Anthropic researchers published a tool they call the Jacobian lens. It identifies the representations a model is poised to put into words, at any point in its processing. They call that set the J-space. The model can report what is there, and much of its computation never enters it. (Established: Gurnee et al., 2026)
+BERT's space was built differently. Nobody surveyed anyone. Nobody labeled the sheets. BERT began with every word as a random arrow of 768 numbers. At the start, "apple" was no nearer to "strawberry" than to "Tuesday."
 
-One instrument looks at what was written. The other looks at what was about to be said. The write head sits between them.
+Then it played a guessing game. Take a real sentence. Hide a few of its words. Let the model guess what fills each blank. When it guesses wrong, nudge the numbers a tiny amount toward the right answer, and move to the next sentence. BERT played this game across about 3.3 billion words of books and English Wikipedia. (Established: Devlin et al., 2019)
 
-## The Study
+Nobody reads those sentences or hands out the nudges. The hidden word is its own answer key. A procedure called backpropagation works backward through the model after every guess and works out, for each of its hundred-odd million numbers, which way to move to give the right word a little more probability next time. Then every number takes a tiny step that way. It is a control loop that runs itself: setpoint, error, correction, next sentence. People write the loop and choose the text. The loop does the rest. (Established)
 
-Here is the proposal at the center of this essay. It has not been run.
+Slowly, words that fit the same blanks settle near each other. "Apple" and "strawberry" both fit "I ate a ___ for lunch," so they end up close. "Apple" and "Tuesday" rarely share a blank, so they end up far apart. No one decides where a word goes. The blanks decide.
 
-Mechanism and data cannot be pulled apart by argument, because the mechanism is learned from the data. They can be pulled apart by controlled variation. Hold the architecture fixed. Change only what it is trained on, one step at a time. In the language of the diagrams, every arm runs the same wiring and differs only in what the wires carry.
+So closeness here does not mean sameness of meaning. It means two words compete for the same open slots. "Hot" and "cold" are opposites, and they sit near each other, because both fit "the water was ___." They even line up along a shared direction, a line of degree, with "warm" in between. The grammar of a sentence, which word attaches to which, can be read back out of the space with simple tools. (Established: Kim and de Marneffe, 2013; Hewitt and Manning, 2019)
 
-Four arms, on the same architecture.
+The sheets I imagined are in there, in a sense. Nobody labeled them, and they are mixed together. The geometry is the shape of the task.
 
-The first arm is a teleportation emulator: a small transformer trained to run the single-qubit protocol itself. It is the one case where the correct behavior is known exactly, so it calibrates the instrument. How the model achieves that behavior inside is not known in advance. That is what the arm tests. It asks real questions. Does the model learn the rule, or memorize? Test it on states it never saw. Do two clean features appear inside it, one for each bit of the key? And how does it hold phase? A transformer runs on real numbers, and phase is a rotation. When small transformers were trained on modular arithmetic, they learned to compute with rotations. A teleportation emulator may have to do the same. If it does, the task built the one thing the architecture lacked. (Established: Power et al., 2022; Nanda et al., 2023. Proposed: the prediction.)
+A word with two senses, like "crane," has one point in the word table. The model tells the senses apart only later, as the word's internal state moves with the sentence around it. (Established: Ethayarajh, 2019)
 
-The second arm is Z80 instruction traces: syntax with every slot closed.
+Even nonsense has slots. Ask a model what happened in "The blorg flurbled the snorble," and it will tell you who did what to whom. Syntax builds the slots before meaning arrives. The space in which contextuality is measured was built from slots too. (Reading)
 
-The third arm is Jabberwocky: blorg sentences, syntax with open slots and no meaning.
+## The Geometric Law
 
-The fourth arm is natural language: open slots and meaning.
+The researchers found one more thing. How contextual a case was could be predicted, a little, from distance.
 
-In every arm, look for the same things. Contextuality in the output, under a named test. The spread of the odds. Whether a J-space forms, and what fills it.
+The two candidate nouns sit at two points in the space. The closer those points sat, the more contextual the case tended to be. Among the features they tested, straight-line distance between the nouns was the best predictor. Among the most similar one percent of noun pairs, the share of contextual cases rose under both tests: from 0.0148 percent to 0.50 percent under the sheaf test, and from 71.1 percent to 81.83 percent under Contextuality-by-Default. (Established)
 
-One caution keeps the study honest. These four kinds of data differ in more than meaning. They differ in how predictable they are, how hard the task is, and how much of it there is. Those differences must be matched or measured. Otherwise a difference between the arms will not show that meaning caused it.
+That fits the expectation. Apple and strawberry fill many of the same blanks, so they sit close, and a sentence has to work to tell them apart. Odds sit nearer even, and the chain breaks more often. Apple and engine rarely share a blank, so almost any sentence separates them.
 
-The sharpest single test follows from that. Build two versions of the blorg language with identical statistics. In one, the invented words consistently refer to things in a small simulated world: the blorg is always the same kind of thing, and flurbling always does the same thing to it. In the other, the same words, in the same patterns, refer to nothing. Same grammar, same uncertainty, same size. The only difference is whether the meaning is grounded. If the two models look the same inside, the structure comes from grammar and uncertainty, not meaning. That null result would be worth reporting. (Proposed)
+But the law is weak. Across the whole dataset, distance explains less than one percent of the variation in contextuality. Even among the most similar pairs, it explains about eight percent. It is a real tendency, not a rule. (Established)
 
-There is a broader question in the same neighborhood. A finished building can look impossible once the scaffolding comes down. A pyramid looks like it could not have been built, until you find the ramps. A trained model is like that. We see the finished behavior, and not the internal tools the training built to reach it. Each arm of this study asks the same question of a different task: what hidden scaffolding does this task build, and what does it leave standing? (Proposed)
+## The Assumption
 
-The prediction, labeled Proposed: little spread and no contextuality in the Z80 arm. Open-slot structure in the Jabberwocky arm. The full picture only in language. If that holds, the ghost of meaning is in the language, not the mechanism, because the mechanism never changed. If it fails, and a Z80 emulator grows a reportable workspace, that is a finding too.
+The researchers get from the equation to distance through one assumption, which they state themselves.
 
-## A Few Experiments You Can Run
+Two arrows go into the equation. The first runs between the two candidate words, from apple to strawberry. Its length is the distance between them. The second comes from the sentence. When the model reads the sentence, it builds an internal state at the blank: one arrow that points the way the sentence leans, as strongly as it leans. Call it the sentence's pointer.
 
-These are clues, not measurements. Each works in any chatbot.
+The gap is how far the sentence's pointer reaches along the line between the two words. That is three things multiplied together: the length of the line, the strength of the pointer, and the angle between them. A pointer aimed along the line gives a large gap. A pointer aimed square to the line favors neither word, however strong it is.
 
-Give it "The crane reached down toward the" and ask for ten endings. Then add one more word, "steel" or "water," and watch the endings collapse.
+The assumption concerns the pointers from many different sentences. It says they point in every direction equally often. The word for that is isotropic. If it is true, the angles average out, and the only thing left to set the typical gap is the length of the line. Farther apart means a bigger gap and less contextuality. The paper says plainly that this step is an approximation. (Established: Lo, Sadrzadeh and Mansfield)
 
-Give it "The blorg flurbled the snorble flambly." Ask what the blorg did, to what, and how. It will answer from syntax alone.
+## Where the Picture Breaks
 
-Slip a hint into a question. Then ask it why it answered as it did. See whether the hint appears in its explanation. Often it does not. People do the same. (Established: Turpin et al., 2023; Nisbett and Wilson, 1977)
+There is good reason to doubt the assumption. Picture the whole space with a center point, and every internal state as an arrow from that center. If the arrows spread evenly, they would point everywhere, like a lamp with no shade. In 2019, Ethayarajh found they do not. In models like BERT, they bunch into a narrow beam, like a flashlight, and most directions in the space go nearly unused. (Established: Ethayarajh, 2019)
 
-## The Door to the Mind
+That beam is the whole vocabulary leaning one way, related words and unrelated ones alike. Similar words then cluster more tightly inside it.
 
-That last experiment points at the oldest version of the ghost. A model writes an explanation of its answer, and the explanation is one more thing written at the write head. It is built from the record, not read off the process.
+If the sentences' pointers crowd into that beam, the angles stop averaging out. A long line between two words that lies across the beam can still get a small gap, and a short line lined up with it can get a large one. Distance alone would then predict the gap badly, because the angle is doing much of the work.
 
-A speaker uses a word whose choosing they cannot see. My earlier essay, *Opacity Dualism*, asked whether that limit is structural. In teleportation, Bob can use a state he cannot read. The J-space gives the question a shape that can be measured in a machine: what a system can report, and what does its work in silence. Whether the same shape holds in a person is a question for the next essay. (Proposed)
+That may be why the law is weak. If the pointers lean in favored directions, distance is only part of the story, and the missing part is alignment. (Proposed)
+
+My early essays went wrong in the same place. I called this the parallax lever and wrote as if nearness itself were the source of the leverage. I was measuring the length of the line and ignoring the angle of the pointer.
+
+## Where the Ghost Sits
+
+In *Cornering the Ghost*, teleportation and ordinary time matched everywhere but one step. A teleporter without its correction delivers noise. Nature without correction delivers facts. The difference was the choice of basis, the set of possible outcomes, made by the environment. We did not choose it, and we are part of that environment. The ghost sat there.
+
+Here, the exact part of the account holds everywhere but one place: the sheet where the gap is exactly zero and the choice between apple and strawberry flips. Away from that sheet, the outcome is settled, and the tabs glue. Near it, the odds are even, and the tabs can refuse to glue. Everything contextual in this picture gathers at that edge.
+
+The three sentences all draw from the same space, built from everything the model has read. They share one whole. They still cannot share one master sheet, and by now that should not surprise us.
+
+So the pattern repeats. In both cases, geometry explains almost everything people call spooky. In both cases, one place is left over. It is where possibilities pile up at a point where pieces join and one of them has to be taken. That may be as close to a definition of context as I can get. (Reading)
+
+There is one difference, and it should be said plainly. In nature, nobody outside the system picks the outcome. In the machine, we do. The model never chooses. It fills the slots and produces odds. A sampler we installed, or a rule that takes the likelier word, does the choosing. In nature, nobody holds the dial. In the machine, we do. What stays open is why the sentence's pointer lands where it does: why this sentence leans toward apple, and by how much. Training on text people wrote set that. (Reading)
+
+## The Heads That Knew
+
+There is a stranger thing near that edge.
+
+Inside a model, many attention heads each offer a partial view of the same word, and the model fuses those views into one. When researchers look at individual heads, or at the model's state halfway through, they sometimes find the right answer already there, then find the finished model saying something else. In one well-studied case, the correct answer can be read out of the middle layers and is then overridden by later heads. In another, backup heads sit idle while a main head does the work, then step in when the main head is removed. Anthropic's recent work on turning a model's internal states into readable text aims at exactly this: what a model holds but does not say. (Established: Halawi, Denain and Steinhardt, 2023; Wang et al., 2022; McGrath et al., 2023; Anthropic, 2026)
+
+I ran into a small version of this in my own toy models. Two heads trained side by side collapsed into one working head and one idle one. Remove the idle head, and almost nothing changed. I called it the lazy attractor: the cheapest arrangement training could find. Starting the heads in different directions broke it. (Glass Attention Workbench, Scripts 029A and 029C)
+
+In spreadsheet terms, these are local views, each fine on its own, discarded when the global answer is assembled. That is not contextuality by itself. A signal can be readable without being used, and noise can look like knowledge if you probe hard enough. The test is causal: put the idle head's view back into the output and see whether the answer changes. But it has the same shape: true locally, lost in the gluing. And it happens where the margin is thin. If there is still a mystery in these machines, this is where I would look. (Reading)
+
+## The Experiment
+
+Here is the experiment this essay proposes. It is small enough to run on a laptop, and it can fail.
+
+Build the researchers' apple-and-strawberry setup in plain arithmetic, with every number visible: two word vectors, a sentence pointer for each of the three sentences, their exact equation for the odds, and their two tests for whether the tabs glue. Then run it twice. In the first run, the pointers point in every direction equally. In the second, they crowd into a narrow beam, the way Ethayarajh found real ones do. In both runs, vary the distance between the two words.
+
+Three predictions, written down before running:
+
+1. The odds follow the equation exactly. If not, the build is wrong; stop.
+2. When the pointers point in every direction, distance predicts contextuality well.
+3. When the pointers crowd into a beam, distance predicts contextuality poorly, and adding the angle between the beam and the word arrow recovers most of what is missing.
+
+If the third prediction holds, it explains why the published relationship is weak. It also points to a better measure than raw distance: distance together with alignment, or the gap itself. If it fails, and distance predicts just as well inside the beam, the assumption holds up better than I expect, and that is worth reporting too.
+
+A second stage would take the same measurements on BERT itself: how strongly its pointers at the blank crowd into a beam, and whether alignment adds to distance in predicting the published results. (Proposed)
+
+Interpretability tools such as the logit lens read the words a model is about to produce next. Anthropic's newer J-lens reads words a model is likely to say a little further ahead. This experiment works at the simplest level: the next word, between two choices.
+
+## Try It Yourself
+
+These are clues, not measurements. They work in any chatbot.
+
+Type "There is an apple and a strawberry. One of them is red and the same one is round. Which is it?" Then change the clues: round and sweet; sweet and red. Watch which way it leans, and how sure it sounds.
+
+Type "The crane reached down toward the" and ask for ten endings. Then add one word, "steel" or "water," and watch the endings collapse to one meaning.
+
+Type "The blorg flurbled the snorble flambly." Ask what the blorg did, to what, and how. None of the words mean anything. It will answer anyway, from grammar alone.
+
+## Perfect Geometry Decides Nothing
+
+Emmy Noether showed in 1918 that every exact symmetry goes with something that never changes. Perfect geometry holds things in place. A ball balanced exactly on a hilltop has no reason to roll either way. It waits for an imperfection. And a computer working with exact real numbers cannot, in general, even confirm that two numbers are exactly equal. It can find a difference if there is one. If there is none, the checking never ends. (Established)
+
+Put those beside the sheet where the choice flips. At exactly zero gap, the equation favors neither word, and in exact arithmetic it cannot even certify that it is at zero. Whatever chooses there is not the geometry. It is what breaks the balance: a little noise, the sampler's roll, the next word in the sentence.
+
+Perfect geometry holds everything in place and decides nothing. The decision comes from what breaks it. (Reading)
 
 ## What This Does Not Establish
 
-It does not show that a language model is a quantum system, or that its contextuality is quantum. It does not show that grammar is teleportation; it shows they share a mathematical shape. It does not show that open slots cause meaning, or that the J-space is consciousness. None of the four arms has been run, and none of the predictions is a result. It offers a comparison, a thesis, and a study, and reports where the comparison holds and where it breaks.
+It does not show that a language model is quantum, or that its contextuality is the contextuality of particles. It does not show that grammar is teleportation. It shows they can be drawn alike. It does not show that any theorem about quantum systems applies to a model's word vectors. It does not show that the experiment will come out as predicted. It has not been run. It does not show that idle heads know anything. A readable signal is not a used one. It does not explain why these models are as reasonable as they are. That question started this, and it is still open. The equation is the researchers'. The one-direction point follows from it. The argument that the result should be expected, the question about the assumption, and the experiment are mine. And this essay delivers only half of what *Cornering the Ghost* promised. It carries the structure into language. The mind is left for the next essay.
 
-## The Write Head
+## The Promise, Kept
 
-In teleportation, the state moves without being read. In a sentence, the relations move without the content being known. The blorg flurbled the snorble, and you understood what happened without knowing what any of it was.
+*Cornering the Ghost* found the ghost at the one step nature never takes. This essay finds it in the same corner, at the one sheet the geometry cannot decide, and finds it smaller there, because in the machine we hold the dial.
 
-In the machine, the dice are ours and the menu is ours. Everything nature hides at the edge of now, the machine shows, except one thing: why those odds. They were set by people writing down what they meant, without knowing how they chose the words.
+The headline said the model failed a Bell test. It did, and it should have. Particles that fail a Bell test are strange because their context is far away. A sentence carries its context with it. The model did what language has always done: it left a word open until context closed it. The measurement shows where that happens. The equation shows why it trembles there. The assumption is where we look next.
 
-*Syntax builds the slots. Meaning arrives in the open ones. The odds are inherited.*
+*The measurement is real. The equation is exact. The result is what we should expect. The ghost is at the edge where the choice flips.*
 
 ## Reading and References
 
-Abramsky and Coecke (2004), LICS. Bennett et al. (1993), *Phys. Rev. Lett.* 70, 1895. Coecke, Sadrzadeh and Clark (2010), *Linguistic Analysis* 36, 345. Gurnee et al. (2026), arXiv:2607.15495. Lambek (1999), LNCS 1582, 1. Lo, Sadrzadeh and Mansfield (2024), arXiv:2412.16806. Nanda et al. (2023), ICLR. Nisbett and Wilson (1977), *Psychological Review* 84, 231. Pallier, Devauchelle and Dehaene (2011), *PNAS* 108, 2522. Power et al. (2022), arXiv:2201.02177. Turpin et al. (2023), arXiv:2305.04388.
+Abramsky (2013), "Relational databases and Bell's theorem," LNCS 8000, 13.
+
+Abramsky and Brandenburger (2011), "The sheaf-theoretic structure of non-locality and contextuality," *New Journal of Physics* 13, 113036.
+
+Abramsky and Coecke (2004), "A categorical semantics of quantum protocols," LICS.
+
+Anthropic (2026), "Natural Language Autoencoders: Turning Claude's thoughts into text."
+
+Bell (1964), *Physics* 1, 195.
+
+Clauser, Horne, Shimony and Holt (1969), "Proposed experiment to test local hidden-variable theories," *Physical Review Letters* 23, 880.
+
+Coecke, Sadrzadeh and Clark (2010), "Mathematical foundations for a compositional distributional model of meaning," *Linguistic Analysis* 36, 345.
+
+Devlin, Chang, Lee and Toutanova (2019), "BERT: Pre-training of deep bidirectional transformers for language understanding," NAACL 2019.
+
+Ethayarajh (2019), "How contextual are contextualized word representations?" EMNLP 2019.
+
+Gurnee et al. (2026), "Verbalizable representations form a global workspace in language models," arXiv:2607.15495 (preprint).
+
+Halawi, Denain and Steinhardt (2023), "Overthinking the truth," arXiv:2307.09476.
+
+Hewitt and Manning (2019), "A structural probe for finding syntax in word representations," NAACL 2019.
+
+Kim and de Marneffe (2013), "Deriving adjectival scales from continuous space word representations," EMNLP 2013.
+
+Lo, Sadrzadeh and Mansfield, "Quantum-like contextuality in large language models," arXiv:2412.16806; published in *Proceedings of the Royal Society A*.
+
+McGrath et al. (2023), "The Hydra effect," arXiv:2307.15771.
+
+Noether (1918), "Invariante Variationsprobleme."
+
+Osgood, Suci and Tannenbaum (1957), *The Measurement of Meaning*, University of Illinois Press.
+
+Wang et al. (2022), "Interpretability in the wild," arXiv:2211.00593.
+
+Cornering the Ghost: github.com/mpe-framework/Cornering-the-Ghost-
 
 ---
 
 **Companion essay:** [Cornering the Ghost](https://github.com/mpe-framework/Cornering-the-Ghost-) — quantum teleportation and the arrival of now.
 
-**The studies:** each proposed study is set out plainly in [PROPOSED_STUDIES.md](PROPOSED_STUDIES.md), with what it tests and what result would count against it.
+**Responses welcome.** If you think something here is wrong, have a better source, or have run the experiment, start a conversation in [Discussions](https://github.com/mpe-framework/They-Ran-a-Bell-Test/discussions), or open an [issue](https://github.com/mpe-framework/They-Ran-a-Bell-Test/issues) for a specific correction. Every claim is labeled so you can tell which ones are load-bearing. Null results are as welcome as positive ones.
 
-**Responses welcome.** If you think something here is wrong, have a better source, or have run one of these studies, start a conversation in [Discussions](https://github.com/mpe-framework/The-Write-Head/discussions), or open an [issue](https://github.com/mpe-framework/The-Write-Head/issues) for a specific correction. Every claim is labeled so you can tell which ones are load-bearing. Null results are as welcome as positive ones.
+*An earlier, shelved essay, The Write Head, is kept in [archive](archive/).*
