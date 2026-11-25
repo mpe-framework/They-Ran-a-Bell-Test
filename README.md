@@ -12,6 +12,8 @@ Failing was not the strange part. A Bell test is how physicists showed that two 
 
 I had been living with a ghost of my own for a while. A thought starts in my head. Neurons fire, muscles move, air shakes, an eardrum moves, and chemistry and electricity rebuild something close to that thought in someone else. Every step loses something. Put a computer in the middle and it still works. Something carries through all of it. I call it a semantic wave, and I cannot tell you what it is made of.
 
+My head was full of other ghosts too. Susskind's holographic universe, where everything inside a region can be written on its boundary, like a program's entire rulebook saved as one flat file. Every law is in the file. Nothing in it says how the game will be played. I kept seeing that pattern: in physics, in the maze of Westworld, in these machines. All the rules knowable. The play, from outside, never quite.
+
 At the same time, I was having conversations with language models that should not have been possible. They were unreasonably reasonable. I had started asking why, and what "reasonable" even means. Then a headline said these machines show the same kind of statistics as entangled particles. I had to know what that meant.
 
 *Cornering the Ghost* took on the other famous piece of quantum spookiness, teleportation, and found that almost all of it is geometry, except one step. This essay does the same with the Bell test. The researchers' own title calls what they found quantum-like contextuality. The "like" is honest. Nothing in the model is quantum. Once you see how the model reads a sentence, the result is what we should expect. Almost all of it is geometry, except one place. It is the same kind of place.
@@ -60,7 +62,11 @@ Nobody runs a Bell test on a language model by accident. The idea came from a br
 
 In 2004, Abramsky and Coecke redrew quantum mechanics as diagrams: wires for systems, a cup for an entangled pair, a cap for a joint measurement. Teleportation became a single drawing. A few years later, Coecke, Sadrzadeh and Clark showed that grammar can be drawn with the same kind of diagrams. A verb's hooks for its subject and object are cups. When the nouns arrive, the wires pull straight, and a sentence's meaning is computed. (Established: Abramsky and Coecke, 2004; Coecke, Sadrzadeh and Clark, 2010)
 
-That is a match between two ways of drawing, not proof that the processes are the same. BERT is not built from these diagrams. The diagrams are why anyone thought to test it. Whether a model's internal space actually carries the diagrams' hooks is a separate, open question. But once grammar is drawn with the same pictures as entanglement, the next question is obvious: do the statistics show the same refusal to glue? Lo, Sadrzadeh and Mansfield went and looked.
+That is a match between two ways of drawing, not proof that the processes are the same. BERT is not built from these diagrams. The diagrams are why anyone thought to test it. Whether a model's internal space actually carries the diagrams' hooks is a separate, open question.
+
+What is not open is that something in the model does the job of grammar. Its structure can be read back out of the model's internal states, and brain imaging finds regions that track the same kind of structure in people. The brain and the model do not share a mechanism. What they appear to share is structure, and structure is what this mathematics tracks. Lambek's grammar is one clean way to write that structure down. Nature's version may look different. (Established: Hewitt and Manning, 2019; Pallier, Devauchelle and Dehaene, 2011)
+
+But once grammar is drawn with the same pictures as entanglement, the next question is obvious: do the statistics show the same refusal to glue? Lo, Sadrzadeh and Mansfield went and looked.
 
 ## What They Actually Did
 
@@ -70,13 +76,17 @@ They built a small story with a pronoun in it, so the model has to decide what t
 
 The model fills the blank. It gives a probability for "apple" and a probability for "strawberry." The researchers keep only those two, rescaled to add up to one, which is the same as asking the model to choose between just those two words. (Established: Lo, Sadrzadeh and Mansfield)
 
-Then they build the spreadsheet. Instead of detector settings, there are clues. Three sentences pair the clues in a loop: red and round, round and sweet, sweet and red. Each sentence is one tab. A master sheet would be one fixed answer for each clue, true no matter which sentence asks: which noun is the red one, which is the round one, which is the sweet one. The test is the same chain. Follow the clues around the loop, red to round to sweet and back to red, and ask whether the model's odds could all come from written-in answers. Where the odds sit near even, the chain can break. (Established)
+Then they build the spreadsheet. Instead of detector settings, there are clues. The three sentences loop: the red one is the same one as the round one; the round one is the same one as the sweet one; the sweet one is the other one from the red one. Each sentence is one tab. A master sheet would be one fixed answer for each clue. But no fixed answer can satisfy all three. If red and round are the same noun, and round and sweet are the same, then sweet and red are the same, and the third sentence says they are not. The contradiction is built into the wording, like a staircase in a drawing that climbs forever. (Established: Lo, Sadrzadeh and Mansfield)
 
-They ran this pattern across pairs of nouns and descriptions drawn from Simple English Wikipedia. Out of 51,966,480 cases, 77,118 failed to glue under a sheaf-theoretic test, and 36,938,948 failed under a different test called Contextuality-by-Default. These are two distinct frameworks, not a strict and a loose version of one test. (Established)
+So the question the tests ask is narrower than it first sounds. Not whether the tabs glue, because by design they cannot, but whether BERT's odds shift enough between the three sentences to explain the contradiction away.
+
+The two tests draw that line in different places. The sheaf test counts a case only when BERT is close to undecided in all three sentences, between about 42 and 58 percent each time. Out of 51,966,480 cases built from pairs of nouns and descriptions in Simple English Wikipedia, 77,118, about 0.15 percent, passed. Contextuality-by-Default counts a case unless the three sentences pull BERT in clearly different directions. Most cases sat right at its threshold, with BERT nearly certain each time, and 36,938,948, about 71 percent, landed just inside. In this setup, every sheaf case is also a CbD case. (Established; where the cases sit is read from the paper's figures)
 
 So the headline was right in its way. In that constructed setting, the model's tabs refuse to glue.
 
 ## Why We Should Expect This
+
+Part of the answer is in the wording: the puzzle is contradictory by design. The rest is in how the model reads.
 
 Here is the difference that takes the spookiness out.
 
@@ -134,11 +144,11 @@ Even nonsense has slots. Ask a model what happened in "The blorg flurbled the sn
 
 The researchers found one more thing. How contextual a case was could be predicted, a little, from distance.
 
-The two candidate nouns sit at two points in the space. The closer those points sat, the more contextual the case tended to be. Among the features they tested, straight-line distance between the nouns was the best predictor. Among the most similar one percent of noun pairs, the share of contextual cases rose under both tests: from 0.0148 percent to 0.50 percent under the sheaf test, and from 71.1 percent to 81.83 percent under Contextuality-by-Default. (Established)
+The two candidate nouns sit at two points in the space. The closer those points sat, the more contextual the case tended to be. Among the features they tested, straight-line distance between the nouns was the best predictor. Among the most similar one percent of noun pairs, the share of contextual cases rose under both tests: from 0.148 percent to 0.50 percent under the sheaf test, and from 71.1 percent to 81.83 percent under Contextuality-by-Default. (Established)
 
 That fits the expectation. Apple and strawberry fill many of the same blanks, so they sit close, and a sentence has to work to tell them apart. Odds sit nearer even, and the chain breaks more often. Apple and engine rarely share a blank, so almost any sentence separates them.
 
-But the law is weak. Across the whole dataset, distance explains less than one percent of the variation in contextuality. Even among the most similar pairs, it explains about eight percent. It is a real tendency, not a rule. (Established)
+But the law is weak. Across the whole dataset, distance explains less than one percent of the variation in contextuality. Even among the most similar pairs, it explains only six to eight percent, depending on the test. It is a real tendency, not a rule. (Established)
 
 ## The Assumption
 
@@ -260,13 +270,15 @@ Hewitt and Manning (2019), "A structural probe for finding syntax in word repres
 
 Kim and de Marneffe (2013), "Deriving adjectival scales from continuous space word representations," EMNLP 2013.
 
-Lo, Sadrzadeh and Mansfield, "Quantum-like contextuality in large language models," arXiv:2412.16806; published in *Proceedings of the Royal Society A*.
+Lo, Sadrzadeh and Mansfield, "Quantum-like contextuality in large language models," *Proceedings of the Royal Society A* (2025), doi:10.1098/rspa.2024.0399; preprint arXiv:2412.16806.
 
 McGrath et al. (2023), "The Hydra effect," arXiv:2307.15771.
 
 Noether (1918), "Invariante Variationsprobleme."
 
 Osgood, Suci and Tannenbaum (1957), *The Measurement of Meaning*, University of Illinois Press.
+
+Pallier, Devauchelle and Dehaene (2011), "Cortical representation of the constituent structure of sentences," *PNAS* 108, 2522.
 
 Wang et al. (2022), "Interpretability in the wild," arXiv:2211.00593.
 
