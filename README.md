@@ -230,6 +230,14 @@ Put those beside the sheet where the choice flips. At exactly zero gap, the equa
 
 Perfect geometry holds everything in place and decides nothing. The decision comes from what breaks it. (Reading)
 
+## Credit Where It Is Due
+
+Lo, Sadrzadeh and Mansfield built their puzzle to carry a contradiction on purpose, the way a Bell experiment is built to give the strangeness its best chance to show. Their goal was quantum computing: to show that language has a structure quantum machines might use. They were not trying to explain how BERT works inside, and they stopped at the model's last step.
+
+But what they built is an instrument, and instruments outlive the question they were made for. An exact equation for the choice, a clean way to make the tabs disagree, and two tests for whether the disagreement can be explained away are all tools an interpretability researcher can pick up and point inward. Others have started to. In 2026, researchers began using the same gluing mathematics to ask where a model's local explanations fail to join into one global account. (Established: Grant and Wang, 2026; Javidnia, 2026)
+
+This essay proposes one more place to point it: the beam, the angle and the heads that knew. I may be wrong about how far these tools will carry. But they were handed to us, and they deserve the credit for whatever we find with them. (Reading)
+
 ## What This Does Not Establish
 
 It does not show that a language model is quantum, or that its contextuality is the contextuality of particles. It does not show that grammar is teleportation. It shows they can be drawn alike. It does not show that any theorem about quantum systems applies to a model's word vectors. It does not show that the experiment will come out as predicted. It has not been run. It does not show that idle heads know anything. A readable signal is not a used one. It does not explain why these models are as reasonable as they are. That question started this, and it is still open. The equation is the researchers'. The one-direction point follows from it. The argument that the result should be expected, the question about the assumption, and the experiment are mine. And this essay delivers only half of what *Cornering the Ghost* promised. It carries the structure into language. The mind is left for the next essay.
@@ -262,11 +270,15 @@ Devlin, Chang, Lee and Toutanova (2019), "BERT: Pre-training of deep bidirection
 
 Ethayarajh (2019), "How contextual are contextualized word representations?" EMNLP 2019.
 
+Grant and Wang (2026), "Gluing local contexts into global meaning: A sheaf-theoretic decomposition of transformer representations," ICLR 2026.
+
 Gurnee et al. (2026), "Verbalizable representations form a global workspace in language models," arXiv:2607.15495 (preprint).
 
 Halawi, Denain and Steinhardt (2023), "Overthinking the truth," arXiv:2307.09476.
 
 Hewitt and Manning (2019), "A structural probe for finding syntax in word representations," NAACL 2019.
+
+Javidnia (2026), "A gauge theory of superposition: Toward a sheaf-theoretic atlas of neural representations," arXiv:2603.00824 (preprint).
 
 Kim and de Marneffe (2013), "Deriving adjectival scales from continuous space word representations," EMNLP 2013.
 
