@@ -300,6 +300,8 @@ Cornering the Ghost: github.com/mpe-framework/Cornering-the-Ghost-
 
 **Companion essay:** [Cornering the Ghost](https://github.com/mpe-framework/Cornering-the-Ghost-) — quantum teleportation and the arrival of now.
 
+**The experiments.** Every study this essay proposes is written out in [EXPERIMENTS.md](EXPERIMENTS.md), with its predictions and the results that would count against them, committed before anything was run.
+
 **Responses welcome.** If you think something here is wrong, have a better source, or have run the experiment, start a conversation in [Discussions](https://github.com/mpe-framework/They-Ran-a-Bell-Test/discussions), or open an [issue](https://github.com/mpe-framework/They-Ran-a-Bell-Test/issues) for a specific correction. Every claim is labeled so you can tell which ones are load-bearing. Null results are as welcome as positive ones.
 
 *An earlier, shelved essay, The Write Head, is kept in [archive](archive/).*

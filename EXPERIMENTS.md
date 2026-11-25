@@ -1,5 +1,7 @@
 # Experiments
 
+*Pre-registered 25 November 2026, before any experiment was run. The commit history is the record.*
+
 *Companion to the essay "They Ran a Bell Test on a Language Model" (README.md). Troy Teno | November 2026.*
 
 *For whoever builds these, human or Claude Code: read the essay first. This file supersedes section 5 of the November 23 handoff (HANDOFF_Bell_Contextuality.md). The essay's "Experiment" section is the summary. This file is the specification.*

@@ -1,0 +1,21 @@
+title: ""
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reading. Disagreement is welcome. Every claim in the essay carries a label (Established, Reading or Proposed), so it helps to say which one you are answering.
+  - type: input
+    id: section
+    attributes:
+      label: Which section or claim?
+      placeholder: e.g. "Why We Should Expect This", or quote the line
+  - type: textarea
+    id: response
+    attributes:
+      label: What do you think?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources, if any

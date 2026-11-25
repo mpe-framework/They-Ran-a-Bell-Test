@@ -1,0 +1,28 @@
+title: "[Result] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ran one of the studies in EXPERIMENTS.md, or something close to it? Post it here. Null and failed results are as welcome as positive ones.
+  - type: input
+    id: study
+    attributes:
+      label: Which study?
+      placeholder: Stage 1 toy, Stage 2 BERT, Stage 3 heads, or your own variant
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Setup
+      description: Model, data, settings, and anything you changed from the specification.
+  - type: textarea
+    id: result
+    attributes:
+      label: What happened, against the written-down predictions?
+    validations:
+      required: true
+  - type: input
+    id: code
+    attributes:
+      label: Link to code or data, if public
